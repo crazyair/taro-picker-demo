@@ -1,16 +1,43 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import './index.scss'
+import { Block, PickerView, PickerViewColumn, View } from "@tarojs/components";
 
-export default function Index() {
-
-  useLoad(() => {
-    console.log('Page loaded.')
-  })
-
+const Demo = () => {
   return (
-    <View className='index'>
-      <Text>Hello world!</Text>
+    <View>
+      <View>
+        <View>
+          <View>
+            <View>
+              <View>
+                <View>
+                  <View>
+                    <View>
+                      <View>
+                        <View>
+                          <View>
+                            <View>
+                              <View>
+                                <PickerView
+                                  style={{ width: "100%", height: 300 }}
+                                >
+                                  <PickerViewColumn>
+                                    <Block>年</Block>
+                                  </PickerViewColumn>
+                                </PickerView>
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
     </View>
-  )
-}
+  );
+};
+
+export default Demo;
